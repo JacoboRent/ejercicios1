@@ -9,12 +9,10 @@
 
 <div class = "tabla">
 <?php
-// definir el predicado lógico
 function predicado_logico($p, $q, $r) {
     return ($p && $q) || (!$q && $r);
 }
 
-// función para imprimir la tabla de verdad 
 function tabla_de_verdad($predicado) {
     echo "<table> <br>";
     echo "<tr><th>p</th><th>q</th><th>r</th><th>resultado</th></tr>";
@@ -30,7 +28,6 @@ function tabla_de_verdad($predicado) {
     echo "</table>";
 }
 
-// llamar a la función tabla_de_verdad con el predicado lógico definido
 tabla_de_verdad("predicado_logico");
 
 ?>
