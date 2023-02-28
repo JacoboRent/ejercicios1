@@ -31,7 +31,6 @@ function total_por_clase($tabla) {
         }
         array_push($total_asistentes, $total);
     }
-    return $total_asistentes;
 }
 
 function alumno_estrella($tabla) {
@@ -42,7 +41,6 @@ function alumno_estrella($tabla) {
     return $alumnos[$index_max];
 }
 
-// Ejemplo de uso
 $alumnos = array('Pepito', 'Yayita', 'Fulanita', 'Panchito');
 $asistencia = array(
     array(true, true, true, false, false, false, false),
@@ -55,7 +53,3 @@ print_r(total_por_alumno($asistencia));  // [3, 5, 7, 6]
 print_r(total_por_clase($asistencia));  // [4, 4, 4, 1, 3, 2, 3]
 echo alumno_estrella($asistencia);  // 'Fulanita'
 ?>
-
-</body>
-</html>
-
